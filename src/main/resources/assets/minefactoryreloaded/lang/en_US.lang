@@ -192,6 +192,16 @@ fluid.mfr.chocolate_milk.fluid.name = Chocolate Milk
 fluid.mfr.mushroom_soup.fluid.name = Mushroom Soup
 fluid.mfr.steam.fluid.name = Steam
 
+fluid.mfr.sludge.still.name = Sludge
+fluid.mfr.sewage.still.name = Sewage
+fluid.mfr.mob_essence.still.name = Essence
+fluid.mfr.biofuel.still.name = BioFuel
+fluid.mfr.meat.still.name = Meat
+fluid.mfr.pink_slime.still.name = Pink Slime
+fluid.mfr.chocolate_milk.still.name = Chocolate Milk
+fluid.mfr.mushroom_soup.still.name = Mushroom Soup
+fluid.mfr.steam.still.name = Steam
+
 entity.MineFactoryReloaded.mfrEntityPinkSlime.name = Pink Slime
 
 item.mfr.bucket.milk.name = Milk Bucket
