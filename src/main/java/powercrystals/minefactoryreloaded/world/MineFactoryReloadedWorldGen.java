@@ -109,14 +109,18 @@ public class MineFactoryReloadedWorldGen implements IFeatureGenerator
 				int lakeX = x + random.nextInt(16);
 				int lakeY = random.nextInt(world.getActualHeight());
 				int lakeZ = z + random.nextInt(16);
-				String ln = biomeID.toString();
-				if (ln.contains("mushroom"))
-				{
-					new WorldGenLakesMeta(MFRFluids.mushroomSoupLiquid.getDefaultState()).generate(world, random, new BlockPos(lakeX, lakeY, lakeZ));
-				}
-				else
-				{
-					new WorldGenLakesMeta(MFRFluids.sewageLiquid.getDefaultState()).generate(world, random, new BlockPos(lakeX, lakeY, lakeZ));
+				if(biomeID != null) {
+					String ln = biomeID.toString();
+                    if (ln.contains("mushroom"))
+                    {
+                        new WorldGenLakesMeta(MFRFluids.mushroomSoupLiquid.getDefaultState()).generate(world, random, new BlockPos(lakeX, lakeY, lakeZ));
+                    }
+                    else
+                    {
+                        new WorldGenLakesMeta(MFRFluids.sewageLiquid.getDefaultState()).generate(world, random, new BlockPos(lakeX, lakeY, lakeZ));
+                    }
+				} else {
+                    new WorldGenLakesMeta(MFRFluids.sewageLiquid.getDefaultState()).generate(world, random, new BlockPos(lakeX, lakeY, lakeZ));
 				}
 			}
 		}
