@@ -11,7 +11,7 @@ import java.util.Locale;
 public class MFRProps {
 
 	public static final String MOD_NAME = "MineFactory Reloaded";
-	public static final String VERSION = "2.9.0B1";
+	public static final String VERSION = "2.9.0B2";
 
 	public static final int DATA_VERSION = 100;
 

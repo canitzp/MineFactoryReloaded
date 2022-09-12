@@ -86,11 +86,6 @@ public class BlockRubberSapling extends BlockBush implements IRedNetNoConnection
 				break;
 			default:
 			case NORMAL:
-				Biome b = world.getBiome(pos);
-				if (b.getBiomeName().toLowerCase(Locale.US).contains("mega"))
-					if (rand.nextInt(50) == 0)
-						if (MineFactoryReloadedWorldGen.generateMegaRubberTree(world, rand, pos, true))
-							return;
 				if (treeGen.growTree(world, rand, pos.getX(), pos.getY(), pos.getZ()))
 					return;
 				break;
